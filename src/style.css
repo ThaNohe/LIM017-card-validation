@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    background-color: rgb(195, 221, 198);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-style:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+
+#container{
+    width: 1000px;
+    margin: 0px auto;
+    border: 1px solid :black;
