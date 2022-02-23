@@ -32,33 +32,31 @@ const validator = {
          console.log('Esta es la suma de los números pares:' + sumaPares);
          console.log('Esta es la suma de los números impares:' + sumaImpares);
          let sumaTotal=sumaPares+sumaImpares;
+         let answer;
          if(sumaTotal % 10 ==0){
-            console.log('válido');
-            return true;
+            //console.log('válido');
+            answer = true;
          }
          else{
-            console.log('no válido')
-            return false;
+            //console.log('no válido')
+            answer = false;
          }
+         return answer;
       },
-     maskify: function (cardNumber) {
-      //EnmascararDígitos
-      //Crear variables para recorrido
-      let maskedCardNumber=[];
-  //console.log(maskedCardNumber);
-  for (let i = 0; i < cardNumber.length; i++)
-  //console.log(cardNumber.length);
-   {
-     if (i < cardNumber.length - 4) 
-     console.log(cardNumber.length - 4){
-        maskedCardNumber.push("#");
-      } else {
-         maskedCardNumber.push(cardNumber[i]);
-
-      }
-   } 
-    return maskedCardNumber.join('');
-   console.log(maskedCardNumber)
+   maskify: function (number) {
+         let myArray = Array.from(number);
+         //console.log(myArray);
+         let myArrayNew = [];
+         //console.log(myArrayNew);
+         for (let i = 0; i < myArray.length; i++){
+            myArrayNew.push(myArray[i]);
+            //console.log(myArrayNew);
+            myArray.splice(0,myArray.length-4,"*","*","*","*","*","*","*","*","*","*","*","*")
+            let arrayMask= myArray.join('');
+            //console.log(arrayMask);
+            return arrayMask;
+         }  
+         
  }
 }
 export default validator;

@@ -1,11 +1,30 @@
-body{
-    text-align: center;
-    background-color: rgb(195, 221, 198);
+body{  
+    background: url(MaiLogo.jpg);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    font-style:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-
+}
 
 #container{
     width: 1000px;
     margin: 0px auto;
     border: 1px solid :black;
+}
+
+#msgV{
+    color: red;
+}
+main{
+    display:flex;
+    align-items:baseline;
+}
+
+#btn{
+    background-color:rgb(0, 0, 0);
+    color: rgb(114, 216, 131);
+    padding: 15px 20px;
+    font-family:"Verdana";
+    font-size: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

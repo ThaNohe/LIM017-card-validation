@@ -7,9 +7,9 @@
   </head>
   
   <body>
-      <div class="container">
-        <h1>Validación de tarjeta</h1>
-        <section>
+    <h1>Validación de tarjeta</h1>
+  <main>
+        <section class="container">
           <h2 id="mensaje">Ingresa el número de tarjeta:</h2>
           <label for="cardNumber">Número de la  tarjeta
           <input 
@@ -19,21 +19,21 @@
           id="cardNumber" 
           oninput= "javascript:if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" 
           maxlength = "16">
+          <p id="msgV"></p>
+          <p id="msgM"></p>
           </label>
           <br>
           <br>
          <button class= "my-button" type="button" id="btn">Validar</button>
-         </section>
+        </section>
           <br>
-         <section>
-          <p class="text-danger mb-2" id="result"></p>
-         </section>
-      </div>
-     
-      </div>
-      
+         
+          
+         
+  </main>
+
         <footer></footer>
         <script src="index.js" type="module"></script>
-      </body>
+  </body>
     </html>
  

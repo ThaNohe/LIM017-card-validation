@@ -1,27 +1,48 @@
 //Importando el mensaje 
 import validator from "./validator.js";
-const msg = document.getElementById('mensaje').innerHTML;
-console.log(msg);
 
+const message = document.getElementById('message');
 const validateInformation = document.getElementById('btn');
-validateInformation.addEventListener('click', validarCardNumber );
+validateInformation.addEventListener('click', () => {
+    //console.log('me diste click');
+    let cardNumberValue = document.getElementById('cardNumber').value;
+    //console.log(cardNumberValue)
+    let maskedCardNumber = validator.maskify(cardNumberValue);
+    let validar = validator.isValid(cardNumberValue);
+    const msgV = document.getElementById('msgV');
+    const msgM = document.getElementById('msgM');
 
-function validarCardNumber(){
-    let cardNumber=document.getElementById('cardNumber').value;
-    let maskedCardNumber = validator.maskify(cardNumber);
-    console.log(maskedCardNumber);
+    if(validar == true) {
 
-    if(cardNumber==''){
+        msgV.innerHTML = 'Tarjeta Válida';
+        msgM.innerHTML =  maskedCardNumber;
+        
+    }else{
+        msgV.innerHTML = 'Tarjeta Inválida';
+        msgM.innerHTML =  maskedCardNumber;
+    }   
+})
+
+/*if(cardNumberValue === 'return true'){
+        const message = document.getElementById('msg')
+        message.innerText = 'Tarjeta Válida'
+        console.log('message');
+    }*/
+
+
+
+    //console.log(number);
+    
+    
+    /*if(cardNumber==''){
         document.getElementById('mensaje').innerHTML='Por favor ingresar número de tarjeta válida';
     }
     else{
         document.getElementById('mensaje').innerHTML='Información de tarjeta válida';   
         validator.isValid(cardNumber)
-        
-    }
-    
-    
-}
+        //if validator
+    }*/  
+//}
 
 
 
