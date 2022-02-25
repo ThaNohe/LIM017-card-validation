@@ -43,20 +43,14 @@ const validator = {
          }
          return answer;
       },
-   maskify: function (number) {
-         let myArray = Array.from(number);
-         //console.log(myArray);
-         let myArrayNew = [];
-         //console.log(myArrayNew);
-         for (let i = 0; i < myArray.length; i++){
-            myArrayNew.push(myArray[i]);
-            //console.log(myArrayNew);
-            myArray.splice(0,myArray.length-4,"*","*","*","*","*","*","*","*","*","*","*","*")
-            let arrayMask= myArray.join('');
-            //console.log(arrayMask);
-            return arrayMask;
-         }  
-         
- }
+   maskify: function (cardNumber) {
+      let cardArray = Array.from(cardNumber);
+      //console.log(cardArray);
+      for(let i=0; i<cardArray.length-4 ; i++){
+         cardArray[i]="#";
+      }
+      return cardArray.join('');
+      //console.log(cardArray);     
+  }
 }
 export default validator;

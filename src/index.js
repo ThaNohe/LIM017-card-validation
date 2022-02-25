@@ -1,7 +1,7 @@
 //Importando el mensaje 
 import validator from "./validator.js";
 
-const message = document.getElementById('message');
+//const message = document.getElementById('message');
 const validateInformation = document.getElementById('btn');
 validateInformation.addEventListener('click', () => {
     //console.log('me diste click');
@@ -14,11 +14,11 @@ validateInformation.addEventListener('click', () => {
 
     if(validar == true) {
 
-        msgV.innerHTML = 'Tarjeta Válida';
+        msgV.innerHTML = '✅Tarjeta Válida';
         msgM.innerHTML =  maskedCardNumber;
         
     }else{
-        msgV.innerHTML = 'Tarjeta Inválida';
+        msgV.innerHTML = '❌Tarjeta Inválida';
         msgM.innerHTML =  maskedCardNumber;
     }   
 })
