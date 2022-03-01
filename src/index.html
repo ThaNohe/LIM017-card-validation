@@ -7,30 +7,49 @@
   </head>
   
   <body>
-    <h1>Validación de tarjeta</h1>
-  <main>
-        <section class="container">
-          <h2 id="mensaje">Ingresa el número de tarjeta:</h2>
-          <label for="cardNumber">Número de la  tarjeta
-          <input 
-          class="form-control mb-2"
-          type="number"
-          placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
-          id="cardNumber" 
-          oninput= "javascript:if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" 
-          maxlength = "16">
-          <p id="msgV"></p>
-          <p id="msgM"></p>
-          </label>
-          <br>
-          <br>
-         <button class= "my-button" type="button" id="btn">Validar</button>
+        <header id="encabezado"><!--logo mai , tienda, blog,logito fb e instagram-->
+          <nav>
+            <a class = "logo nav-link">MAI PRODUCTOS NATURALES</a>
+            <ul class="nav-menu"></ul>
+          </nav>
+
+        </header>
+  
+
+        <section class="container" id="cont1">
+           <div><!--descripcion y button-->
+            <h2>ACEITE DE COCO</h2>
+            <p></p>
+            <button>Comprar</button>
+
+           </div>
+          <div class="product" id="product1">
+            <img src="">
+          </div>
+        </section>
+        
+        <section class="container" id="cont2">
+          <figure>
+          <!--los logos de las tarjetas-->
+         </figure>
+         <main>
+           <h2 id="mensaje">Ingresa el número de tarjeta:</h2>
+           <label for="cardNumber">Número de la  tarjeta
+             <input class="form-control mb-2"type="number"placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
+             id="cardNumber" 
+             oninput= "javascript:if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" 
+             maxlength = "16">
+             <p id="msgV"></p>
+             <p id="msgM"></p>
+            </label>
+            <br>
+            <br>
+             <button class= "my-button" type="button" id="btn">Validar</button>
+          </main>
         </section>
           <br>
-         
-          
-         
-  </main>
+            
+  
 
         <footer></footer>
         <script src="index.js" type="module"></script>

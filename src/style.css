@@ -1,9 +1,13 @@
 body{  
-    background: url(MaiLogo.jpg);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    background: url(MAI_bg.gif);
+    font-family:'Lucida Sans';
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+
 }
 
-#container{
+.container{
     width: 1000px;
     margin: 0px auto;
     border: 1px solid black;
@@ -27,4 +31,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#encabezado{
+    background-color: rgb(34, 156, 34);
+    width:100%;
+    height:200px;
 }
