@@ -3,55 +3,121 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/073db04174/UntitledProject/style.css">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
   </head>
   
   <body>
         <header id="encabezado"><!--logo mai , tienda, blog,logito fb e instagram-->
-          <nav>
-            <a class = "logo nav-link">MAI PRODUCTOS NATURALES</a>
-            <ul class="nav-menu"></ul>
+          <div class="image-container">
+            <img class="logo" src="Imagenes/logo-ong.png" alt="" srcset="">
+          </div>
+          <nav class="nav-contair">
+            
+            <ul class="nav-redes">
+              <li class="item-redes">
+                <span class="icon-fa"></span>
+              </li>
+              <li class="item-redes">
+                <span class="icon-ins"></span>
+              </li>
+
+            </ul>
           </nav>
 
         </header>
-  
 
-        <section class="container" id="cont1">
-           <div><!--descripcion y button-->
-            <h2>ACEITE DE COCO</h2>
-            <p></p>
-            <button>Comprar</button>
-
-           </div>
-          <div class="product" id="product1">
-            <img src="">
-          </div>
+        <section class="container container--fondo" id="cont1">
+          <table>
+            <tr>
+            <td>
+              <img id="product__image1" src="Imagenes/productocon-tag-.png">
+            </th>
+            <td>
+              <div class="descriptivo"><!--descripcion y button-->
+                <h1>ACEITE DE COCO</h1>
+                <p>Aceite de coco extravirgen procesado naturalmente en la selva peruana y envasado sin preservantes </p>
+                <h2>Detalles adicionales</h2>
+                <p>Disponible solo en envase de 450 ml</p>
+                <br>
+              </div> 
+            </td>
+            <td>
+              <button  class="btnBuy">Comprar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img id="product__image2" src="Imagenes/2.-Choco plus.jpg">
+            </td>
+            <td>
+              <div class="descriptivo"><!--descripcion y button-->
+                <h1>CACAO EN POLVO</h1>
+                <p>El cacao en polvo se elabora mediante la molienda de los granos de cacao. Una vez que se ha molido, el tamaño medio de los granos no supera los tres milímetros. </p>
+                <h2>Detalles adicionales</h2>
+                <p>Disponible solo en envase de 250 gr.</p>
+                <br>
+              </div> 
+            </td>
+            <td>
+              <button  class="btnBuy">Comprar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img id="product__image3" src="Imagenes/3.-Pasta Integral.jpg">
+            </td>
+            <td>
+              <div class="descriptivo"><!--descripcion y button-->
+                <h1>PASTA INTEGRAL</h1>
+                <p>Pasta integral en lingue y fetuccine cinta ancha. Tipos:
+                  <ul>
+                    <li>Maca, quinua y kiwicha 3 en 1</li>
+                    <li>Espinaca</li>
+                    <li>Zanahoria</li>
+                  </ul> 
+                </p>
+                <h2>Detalles adicionales</h2>
+                <p>Disponible solo en envase de 250 gr.</p>
+                <br>
+              </div>
+            </td>
+            <td>
+              <button  class="btnBuy">Comprar</button>
+            </td>
+          </tr>
+          </table>
         </section>
         
         <section class="container" id="cont2">
-          <figure>
-          <!--los logos de las tarjetas-->
-         </figure>
-         <main>
-           <h2 id="mensaje">Ingresa el número de tarjeta:</h2>
-           <label for="cardNumber">Número de la  tarjeta
-             <input class="form-control mb-2"type="number"placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
-             id="cardNumber" 
-             oninput= "javascript:if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" 
-             maxlength = "16">
-             <p id="msgV"></p>
-             <p id="msgM"></p>
-            </label>
-            <br>
-            <br>
-             <button class= "my-button" type="button" id="btn">Validar</button>
-          </main>
-        </section>
-          <br>
-            
-  
-
-        <footer></footer>
+          <table>
+            <tr>
+              <td>
+                <div id="buy_section">
+                  <img src="Imagenes/Card_1.png" alt="" class="tarjeta">
+                   <h2 id="mensaje">Ingresa el número de tarjeta:</h2>
+                   <label>
+                     <input class="form-control mb-2"type="number"placeholder=""
+                     id="cardNumber" 
+                     oninput= "javascript:if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" 
+                     maxlength = "16">
+                     <p id="msgV"></p>
+                     <p id="msgM"></p>
+                    </label>
+                     <button id="btn">Validar</button>
+                  </div>
+              </td>
+              <td>
+                <div id="compra1">
+                <h1>PRODUCTOS ORGÁNICOS</h1><br>
+                <img src="Imagenes/organicos.jpg"><br>
+                <h2>Gracias por su preferencia. Con la compra de estos productos contribuyes a la conservación de áreas naturales protegidas y al desarrollo económico de diversas comunidades.</h2>
+              </div>
+              </td>
+            </tr>
+          </table>
+        <footer> Copyright © 2022 MAI SAC. Todos los derechos reservados. Desarrollado por ThalíaNCuadros  </footer>
         <script src="index.js" type="module"></script>
   </body>
     </html>

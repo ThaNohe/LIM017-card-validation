@@ -33,7 +33,7 @@ const validator = {
          console.log('Esta es la suma de los números impares:' + sumaImpares);
          let sumaTotal=sumaPares+sumaImpares;
          let answer;
-         if(sumaTotal % 10 ==0){
+         if(sumaTotal % 10 === 0){
             //console.log('válido');
             answer = true;
          }
